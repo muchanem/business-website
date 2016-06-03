@@ -1,0 +1,288 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(name='description', content='')
+    |     
+    meta(name='author', content='')
+    |     
+    title Contact Us | Flat Theme
+    |     
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    |     
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+    |     
+    link(href='css/prettyPhoto.css', rel='stylesheet')
+    |     
+    link(href='css/animate.css', rel='stylesheet')
+    |     
+    link(href='css/main.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='js/html5shiv.js')
+      |     
+      script(src='js/respond.min.js')
+    |        
+    |     
+    link(rel='shortcut icon', href='images/ico/favicon.ico')
+    |     
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='images/ico/apple-touch-icon-144-precomposed.png')
+    |     
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='images/ico/apple-touch-icon-114-precomposed.png')
+    |     
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='images/ico/apple-touch-icon-72-precomposed.png')
+    |     
+    link(rel='apple-touch-icon-precomposed', href='images/ico/apple-touch-icon-57-precomposed.png')
+  // /head
+  body
+    header.navbar.navbar-inverse.navbar-fixed-top.wet-asphalt(role='banner')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            |                     
+            span.icon-bar
+            |                     
+            span.icon-bar
+            |                     
+            span.icon-bar
+          |                 
+          a.navbar-brand(href='index.html')
+            img(src='images/logo.png', alt='logo')
+        |             
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='index.html') Home
+            |                     
+            li
+              a(href='about-us.html') About Us
+            |                     
+            li
+              a(href='services.html') Services
+            |                     
+            li
+              a(href='portfolio.html') Portfolio
+            |                     
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Pages 
+                i.icon-angle-down
+              |                         
+              ul.dropdown-menu
+                li
+                  a(href='career.html') Career
+                |                             
+                li
+                  a(href='blog-item.html') Blog Single
+                |                             
+                li
+                  a(href='faq.html') FAQ
+                |                             
+                li
+                  a(href='pricing.html') Pricing
+                |                             
+                li
+                  a(href='404.html') 404
+                |                             
+                li
+                  a(href='registration.html') Registration
+                |                             
+                li.divider
+                |                             
+                li
+                  a(href='privacy.html') Privacy Policy
+                |                             
+                li
+                  a(href='terms.html') Terms of Use
+            |                     
+            li
+              a(href='blog.html') Blog
+            |  
+            |                     
+            li.active
+              a(href='contact-us.html') Contact
+    // /header
+    section#title.emerald
+      .container
+        .row
+          .col-sm-6
+            h1 Contact Us
+            |                     
+            p Pellentesque habitant morbi tristique senectus et netus et malesuada
+          |                 
+          .col-sm-6
+            ul.breadcrumb.pull-right
+              li
+                a(href='index.html') Home
+              |                         
+              li.active Contact Us
+    // /#title
+    section#contact-page.container
+      .row
+        .col-sm-8
+          h4 Contact Form
+          |                 
+          .status.alert.alert-success(style='display: none')
+          |                 
+          form#main-contact-form.contact-form(name='contact-form', method='post', action='sendemail.php', role='form')
+            .row
+              .col-sm-5
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='First Name')
+                |                             
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='Last Name')
+                |                             
+                .form-group
+                  input.form-control(type='text', required='required', placeholder='Email address')
+                |                             
+                .form-group
+                  button.btn.btn-primary.btn-lg(type='submit') Send Message
+              |                         
+              .col-sm-7
+                textarea#message.form-control(name='message', required='required', rows='8', placeholder='Message')
+        // /.col-sm-8
+        .col-sm-4
+          h4 Our Location
+          |                 
+          iframe(width='100%', height='215', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com.au/maps?f=q&source=s_q&hl=en&geocode=&q=Dhaka,+Dhaka+Division,+Bangladesh&aq=0&oq=dhaka+ban&sll=40.714353,-74.005973&sspn=0.836898,1.815491&ie=UTF8&hq=&hnear=Dhaka+Division,+Bangladesh&t=m&ll=24.542126,90.293884&spn=0.124922,0.411301&z=8&output=embed')
+        // /.col-sm-4
+    // /#contact-page
+    section#bottom.wet-asphalt
+      .container
+        .row
+          .col-md-3.col-sm-6
+            h4 About Us
+            |                     
+            p
+              | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            |                     
+            p Pellentesque habitant morbi tristique senectus.
+          // /.col-md-3
+          .col-md-3.col-sm-6
+            h4 Company
+            |                     
+            div
+              ul.arrow
+                li
+                  a(href='#') The Company
+                |                             
+                li
+                  a(href='#') Our Team
+                |                             
+                li
+                  a(href='#') Our Partners
+                |                             
+                li
+                  a(href='#') Our Services
+                |                             
+                li
+                  a(href='#') Faq
+                |                             
+                li
+                  a(href='#') Conatct Us
+                |                             
+                li
+                  a(href='#') Privacy Policy
+                |                             
+                li
+                  a(href='#') Terms of Use
+                |                             
+                li
+                  a(href='#') Copyright
+          // /.col-md-3
+          .col-md-3.col-sm-6
+            h4 Latest Blog
+            |                     
+            div
+              .media
+                .pull-left
+                  img(src='images/blog/thumb1.jpg', alt='')
+                |                             
+                .media-body
+                  span.media-heading
+                    a(href='#') Pellentesque habitant morbi tristique senectus
+                  |                                 
+                  small.muted Posted 17 Aug 2013
+              |                         
+              .media
+                .pull-left
+                  img(src='images/blog/thumb2.jpg', alt='')
+                |                             
+                .media-body
+                  span.media-heading
+                    a(href='#') Pellentesque habitant morbi tristique senectus
+                  |                                 
+                  small.muted Posted 13 Sep 2013
+              |                         
+              .media
+                .pull-left
+                  img(src='images/blog/thumb3.jpg', alt='')
+                |                             
+                .media-body
+                  span.media-heading
+                    a(href='#') Pellentesque habitant morbi tristique senectus
+                  |                                 
+                  small.muted Posted 11 Jul 2013
+          // /.col-md-3
+          .col-md-3.col-sm-6
+            h4 Address
+            |                     
+            address
+              strong Twitter, Inc.
+              br
+              |                         795 Folsom Ave, Suite 600
+              br
+              |                         San Francisco, CA 94107
+              br
+              |                         
+              abbr(title='Phone') P:
+              |  (123) 456-7890
+            |                     
+            h4 Newsletter
+            |                     
+            form(role='form')
+              .input-group
+                input.form-control(type='text', autocomplete='off', placeholder='Enter your email')
+                |                             
+                span.input-group-btn
+                  button.btn.btn-danger(type='button') Go!
+          // /.col-md-3
+    // /#bottom
+    footer#footer.midnight-blue
+      .container
+        .row
+          .col-sm-6
+            | &copy; 2013 
+            a(target='_blank', href='http://shapebootstrap.net/', title='Free Twitter Bootstrap WordPress Themes and HTML templates') ShapeBootstrap
+            | . All Rights Reserved.
+          |                 
+          .col-sm-6
+            ul.pull-right
+              li
+                a(href='#') Home
+              |                         
+              li
+                a(href='#') About Us
+              |                         
+              li
+                a(href='#') Faq
+              |                         
+              li
+                a(href='#') Contact Us
+              |                         
+              li
+                a#gototop.gototop(href='#')
+                  i.icon-chevron-up
+              // #gototop
+    // /#footer
+    script(src='js/jquery.js')
+    |     
+    script(src='js/bootstrap.min.js')
+    |     
+    script(src='js/jquery.prettyPhoto.js')
+    |     
+    script(src='js/main.js')
